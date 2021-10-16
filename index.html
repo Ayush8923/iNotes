@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iNotes</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+
+
+    <div class="navbar">
+        <a class="logo" href="#home">iNotes</a>
+        <div class="nav-links">
+            <a href="#">HOME</a>
+            <a href="#">CONTRIBUTE</a>
+        </div>        
+
+        <input type="text" class="search" id="search" placeholder="search....">
+        <button class="ham" id="ham">&#9776;</button>
+    </div>
+
+
+
+
+
+
+
+    <div class="notes-container" id="notes-container">
+        
+    </div>
+    
+
+    <div class="popup" id="popup" onclick="popup()">
+        <h2>+</h2>
+    </div>
+
+
+    <div class="popup-modal">
+        <div class="modal-content">
+            <div class="close">+</div>
+            <form>
+            <input class ="addTitle" type="text" id="addTitle" placeholder="Add your title here">
+            <textarea class = "addTxt" id="addTxt" rows="4" cols="50" placeholder="Add your note here" autofocus></textarea>
+            <button class="addBtn" id="addBtn">Add Note</button>
+            </form>
+        </div>
+    </div>
+
+
+
+   <script src="popup.js"></script>
+   <script src="notes.js"></script>
+
+
+
+</body>
+</html>

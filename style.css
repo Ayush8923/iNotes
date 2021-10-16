@@ -1,0 +1,175 @@
+
+/* global setting */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* styling the navbar */
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    padding: 10px;
+}
+.logo{
+    font-size: 30px;
+    margin-left: 10rem;
+}
+.navbar a{
+    color: cyan;
+    text-decoration: none;
+}
+ .nav-links a{
+    margin: 20px;
+}
+.nav-links a:hover{
+   border-bottom: 2px solid white;
+}
+.search{
+    margin-right: 5rem;
+    border: 2px solid cyan;
+    font-size: 18px;
+    text-align:center;
+    border-radius: 10px;
+}
+
+.ham{
+    display: none;
+}
+
+  /* Style the search box inside the navigation bar */
+  /* .topnav input[type=text] {
+    float: right;
+    padding: 6px;
+    border: none;
+    margin-top: 8px;
+    margin-right: 16px;
+    font-size: 17px;
+  } */
+
+/* this is for the + button */
+.popup{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+
+    width: 50px;
+    height: 50px;
+    padding: 10px 10px;
+    margin: 10px 10px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+    background-color: black;
+    color: cyan;
+    font-size: 40px;
+}
+
+
+/* this is for the modal that we want to popup */
+
+
+.popup-modal{
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.7);
+
+    position: absolute;
+
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+
+.modal-content{
+    width: 500px;
+    height: 500px;
+    background-color:black;
+    opacity: 1;
+    border-radius: 10px;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+
+}
+form{
+    margin: 30% auto;
+}
+.addTxt{
+    display: block;
+    width: 100%;
+    margin: 5% auto;
+    
+    background-color: black;
+    color: white;
+    border-color: cyan;
+
+}
+.addTxt:hover{
+    background-color: white;
+    color: black;
+}
+
+.addTitle{
+    width: 100%;
+    margin: 2% auto;
+    background-color: black;
+    color: white;
+    border-color: cyan;
+    font-size: 20px;
+}
+
+.close{
+    position: absolute;
+    top: 0;
+    right: 14px;
+    transform: rotate(45deg);
+    cursor: pointer;
+    font-size: 50px;
+    color: white;
+}
+
+
+
+
+.addBtn{
+    background-color: black;
+    color: cyan;
+    padding: 15px;
+    font-weight: bold;
+    word-spacing: 2px;
+    border-color: cyan;
+}
+.addBtn::placeholder{
+    color: white;
+    font-weight: bold;
+}
+
+.addBtn:hover{
+    color: white;
+}
+
+
+
+.notes-container{
+     display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+/* css for card that contain the notes */
+
+
+
+
+
+
